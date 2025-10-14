@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/style.css">
+   <title>Capital Command</title>
+</head>
+<body>
+   
+   <!-- This is going to put everything in the middle -->
+   <div class="container"> 
+
+      <header id="title">
+         <h1>Capital Command: Your Expense Tracker</h1>
+      </header>
+
+      <!-- This contains the content of the page -->
+      <main id="main-container">
+
+         <!-- This display the total amount of the transaction -->
+         <section id="balance-container">
+            <h2>Your Balance</h2>
+            <p id="balance-total">PHP 0.00</p>
+         </section>
+
+         <!-- This display the income and expense -->
+         <section id="income-expense-container">
+            <div class="income-container">
+               <h3>Income</h3>
+               <p id="money-plus">PHP 0.00</p>
+            </div>
+            <div class="expense-container">
+               <h3>Expense</h3>
+               <p id="money-minus">PHP 0.00</p>
+            </div>
+         </section>
+
+         <section id="history-container">
+            <h2>History</h2>
+            <ul id="list">
+
+            </ul>
+         </section>
+
+         <!-- This contains the form transaction input values -->
+         <section id="transaction-container">
+            <form action="#" id="form">
+               <label for="description">Description</label>
+               <input type="text" name="description" id="description">
+
+               <label for="amout">Amount</label>
+               <input type="number" name="amount" id="amount">
+
+               <input type="submit" value="Submit" id="btn-add">
+            </form>
+         </section>
+
+      </main>
+
+   </div>
+
+   <script src="./js/script.js"></script>
+</body>
+</html>
