@@ -57,6 +57,7 @@ function addTransaction(e) {
    txtAmount.value = '';
    updateLocalStorage();
    displayTransactions();
+   updateBalance()
 }
 
 // console.log(transactions);
@@ -69,7 +70,7 @@ form.addEventListener('submit', addTransaction);
 // Implement displayTransactions() function
 console.log(transactions);
 
-function createTransactionElement(transaction) {
+function createTransactionElement(transaction) { // Helper function
    const li = document.createElement('li');
    const deleteBtn = document.createElement('button')
 
@@ -83,7 +84,7 @@ function createTransactionElement(transaction) {
    deleteBtn.setAttribute('data-id', transaction.id);
    deleteBtn.innerText = 'X';
 
-   li.innerHTML = `${transaction.description}<span>${sign}${Math.abs(transaction.amount).toFixed(2)}</span>${deleteBtn.outerHTML}`;
+   li.innerHTML = `${transaction.description} <span>${sign}${Math.abs(transaction.amount).toFixed(2)}</span> ${deleteBtn.outerHTML}`;
 
    return li;
 }
@@ -96,4 +97,54 @@ function displayTransactions() {
       historyList.append(transactionElement);
    })
 }
+
+// =================================================================================
+
+function updateBalance() {
+
+   // displaying the balance to the HTML DOM
+   const amounts = transactions.map(transaction => 
+      transaction.amount
+   );
+
+   const total = amounts.reduce((accumulator, item) => 
+      (accumulator += item), 0).toFixed(2);
+   balanceTotal.textContent = `PHP ${total}`;
+
+   // Calculating income
+   const income = amounts
+      .filter(item => item > 0)
+      .reduce((accumulator, item) => (accumulator += item), 0)
+      .toFixed(2);
+   moneyPlusDisplay.textContent = `PHP ${income}`;
+
+   // Calculating expense
+   const expense = amounts
+      .filter(item => item < 0)
+      .reduce((accumulator, item) => (accumulator += item), 0);
+   moneyMinusDisplay.textContent = `PHP ${Math.abs(expense).toFixed(2)}`;
+
+}
+
+// ========================================================
+
+function removeTransaction(id) {
+   const removeById = transactions.filter(transaction => transaction.id !== id);
+   transactions = removeById;
+
+   updateLocalStorage();
+   updateBalance();
+   displayTransactions();
+}
+
+historyList.addEventListener('click', function(e) {
+   if (e.target.classList.contains('delete-btn')) {
+      const transactionID = e.target.getAttribute('data-id');
+      const parsedID = parseInt(transactionID);
+      removeTransaction(parsedID);
+   }
+})
+
 displayTransactions();
+updateBalance();
+updateLocalStorage()
