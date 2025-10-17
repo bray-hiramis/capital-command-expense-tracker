@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.current-tab {
+  background-color: coral;
+  color: #000;
+  text-decoration: underline;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #222;
+}
+body a {
+  display: block;
+  text-decoration: none;
+  color: #222;
+  font-size: 1.6rem;
+}
+body li {
+  list-style: none;
+}
+body h1 {
+  font-size: 3rem;
+}
+body h2 {
+  font-size: 2.2rem;
+}
+
+#main-nav {
+  display: flex;
+  justify-content: space-around;
+}
+#main-nav #home-main {
+  padding: 12px 18px;
+}
+#main-nav #nav-list {
+  display: flex;
+}
+#main-nav #nav-list a {
+  padding: 12px 18px;
+  transition: 0.3s;
+}
+#main-nav #nav-list a:hover {
+  background-color: coral;
+  color: #000;
+  text-decoration: underline;
+}
+
+#hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+}
+#hero #content-hero h1 {
+  font-size: 6rem;
+}
+#hero #content-hero p {
+  font-size: 2rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */
