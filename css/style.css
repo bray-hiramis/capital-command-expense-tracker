@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 .current-tab {
-  background-color: coral;
-  color: #000;
+  background-color: #00446B;
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -52,8 +52,8 @@ body h2 {
   transition: 0.3s;
 }
 #main-nav #nav-list a:hover {
-  background-color: coral;
-  color: #000;
+  background-color: #00446B;
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -61,7 +61,7 @@ body h2 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 50vh;
+  height: 40vh;
 }
 #hero #content-hero h1 {
   font-size: 6rem;
@@ -71,8 +71,65 @@ body h2 {
 }
 
 .container {
-  max-width: 960px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.container #main-container {
+  background-color: #00446B;
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 4px gray;
+}
+.container #main-container #balance-container {
+  text-align: center;
+}
+.container #main-container #balance-container h2 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5em;
+}
+.container #main-container #balance-container p {
+  background-color: #f8f8f8;
+  color: #222;
+  padding: 30px;
+  margin-bottom: 1em;
+  font-size: 3.2rem;
+  border-radius: 10px;
+}
+.container #main-container #income-expense-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  gap: 10px;
+}
+.container #main-container #income-expense-container h3 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
+}
+.container #main-container #income-expense-container .box {
+  background-color: #f8f8f8;
+  color: #222;
+  width: 50%;
+  border-radius: 10px;
+  margin-bottom: 1.5em;
+  padding: 20px 0;
+}
+.container #main-container #income-expense-container .box p {
+  font-size: 1.8rem;
+}
+.container #main-container #income-expense-container .income-container h3 {
+  color: green;
+}
+.container #main-container #income-expense-container .expense-container h3 {
+  color: red;
+}
+.container #main-container #history-container {
+  overflow-y: scroll;
+  padding: 20px;
+}
+.container #main-container #history-container h2 {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

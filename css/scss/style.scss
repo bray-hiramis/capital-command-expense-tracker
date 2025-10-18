@@ -1,8 +1,4 @@
 @use 'util';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-$font-primary: "Roboto", sans-serif;
-$font-color: #222;
-$primary-color: #f8f8f8;
 
 * {
    margin: 0;
@@ -11,19 +7,19 @@ $primary-color: #f8f8f8;
 }
 
 html {
-   font-family: $font-primary;
+   font-family: util.$font-primary;
    font-size: 10px;
    scroll-behavior: smooth;
 }
 
 body {
-   background-color: $primary-color;
-   color: $font-color;
+   background-color: util.$primary-color;
+   color: util.$font-color;
 
    a {
       display: block;
       text-decoration: none;
-      color: $font-color;
+      color: util.$font-color;
       font-size: 1.6rem;
    }
 
@@ -57,8 +53,8 @@ body {
       }
 
       a:hover {
-         background-color: coral;
-         color: #000;
+         background-color: util.$accent-color;
+         color: #fff;
          text-decoration: underline;
       }
    }
@@ -68,7 +64,7 @@ body {
    display: flex;
    justify-content: space-around;
    align-items: center;
-   height: 50vh;
+   height: 40vh;
 
    #content-hero {
       h1 {
@@ -82,6 +78,81 @@ body {
 }
 
 .container {
-   max-width: 960px;
-   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   padding: 10px;
+
+
+   #main-container {
+      background-color: util.$accent-color;
+      color: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 5px 4px gray;
+
+      #balance-container {
+         text-align: center;
+
+         h2 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5em;
+         }
+
+         p {
+            background-color: util.$primary-color;
+            color: util.$font-color;
+            padding: 30px;
+            margin-bottom: 1em;
+            font-size: 3.2rem;
+            border-radius: 10px;
+            
+         }
+      }
+
+      #income-expense-container {
+         display: flex;
+         justify-content: space-around;
+         text-align: center;
+         gap: 10px;
+
+         h3 {
+            font-size: 2.5rem;
+            margin-bottom: .5em;
+         }
+
+         .box {
+            background-color: util.$primary-color;
+            color: util.$font-color;
+            width: 50%;
+            border-radius: 10px;
+            margin-bottom: 1.5em;
+            padding: 20px 0;
+
+            p {
+               font-size: 1.8rem;
+            }
+         }
+
+         .income-container {
+            h3 {
+               color: green;
+            }
+         }
+
+         .expense-container {
+            h3 {
+               color: red;
+            }
+         }
+      }
+
+      #history-container {
+         overflow-y: scroll;
+         padding: 20px;
+
+         h2 {
+            text-align: center;
+         }
+      }
+   }
 }

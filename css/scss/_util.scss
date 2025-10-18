@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+$font-primary: "Roboto", sans-serif;
+$font-color: #222;
+$primary-color: #f8f8f8;
+$accent-color: #00446B;
+
 .current-tab {
-   background-color: coral;
-   color: #000;
+   background-color: $accent-color;
+   color: #fff;
    text-decoration: underline;
 }
