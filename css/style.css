@@ -36,6 +36,11 @@ body h1 {
 body h2 {
   font-size: 2.2rem;
 }
+body img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
 
 #main-nav {
   display: flex;
@@ -59,15 +64,20 @@ body h2 {
 
 #hero {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 50vh;
+  gap: 50px;
 }
 #hero #content-hero h1 {
   font-size: 6rem;
 }
 #hero #content-hero p {
   font-size: 2rem;
+}
+#hero #img-hero img {
+  width: 100%;
+  height: 40vh;
 }
 
 .container {
@@ -81,6 +91,7 @@ body h2 {
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 5px 4px gray;
+  width: 960px;
 }
 .container #main-container #balance-container {
   text-align: center;
@@ -102,6 +113,7 @@ body h2 {
   justify-content: space-around;
   text-align: center;
   gap: 10px;
+  margin-bottom: 3.5em;
 }
 .container #main-container #income-expense-container h3 {
   font-size: 2.5rem;
@@ -112,7 +124,6 @@ body h2 {
   color: #222;
   width: 50%;
   border-radius: 10px;
-  margin-bottom: 1.5em;
   padding: 20px 0;
 }
 .container #main-container #income-expense-container .box p {
@@ -127,9 +138,80 @@ body h2 {
 .container #main-container #history-container {
   overflow-y: scroll;
   padding: 20px;
+  margin-bottom: 4em;
+  background-color: #f8f8f8;
+  color: #222;
+  border-radius: 10px;
 }
 .container #main-container #history-container h2 {
   text-align: center;
+}
+.container #main-container #history-container #list {
+  min-height: 30vh;
+}
+.container #main-container #history-container #list li {
+  font-size: 1.5rem;
+  border-bottom: solid 2px #ccc;
+  text-align: center;
+}
+.container #main-container #history-container #list li:last-child {
+  border-bottom: none;
+}
+.container #main-container #history-container #list li span {
+  font-weight: bold;
+}
+.container #main-container #history-container #list li .delete-btn {
+  cursor: pointer;
+  padding: 0.8em;
+  color: red;
+  background: none;
+  border: none;
+  transition: 0.2s;
+  font-weight: bold;
+}
+.container #main-container #history-container #list li .delete-btn:hover {
+  transform: scale(1.5);
+}
+.container #main-container #transaction-container form fieldset {
+  padding: 20px;
+  border-radius: 10px;
+}
+.container #main-container #transaction-container form fieldset legend {
+  font-size: 2rem;
+}
+.container #main-container #transaction-container form fieldset p {
+  font-size: 1.4rem;
+  margin-bottom: 0.8em;
+}
+.container #main-container #transaction-container form fieldset label {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 0.5em;
+}
+.container #main-container #transaction-container form fieldset input[type=reset], .container #main-container #transaction-container form fieldset input[type=submit] {
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.container #main-container #transaction-container form fieldset input {
+  font-size: 1.5rem;
+  display: block;
+  min-width: 100%;
+  margin-bottom: 0.5em;
+  padding: 15px 10px;
+  border-radius: 10px;
+  border: none;
+}
+.container #main-container #transaction-container form fieldset input[type=submit] {
+  background-color: #235C00;
+  color: #fff;
+}
+.container #main-container #transaction-container form fieldset input[type=submit]:hover {
+  background-color: #3d6b20;
+}
+.container #main-container #transaction-container form fieldset input[type=reset]:hover {
+  background-color: rgb(205, 240, 248);
 }
 
 /*# sourceMappingURL=style.css.map */

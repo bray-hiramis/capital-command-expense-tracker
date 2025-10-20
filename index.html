@@ -24,7 +24,7 @@
          <p>Your Expense Tracker</p>
       </div>
       <div id="img-hero">
-         <img src="#" alt="#">
+         <img src="./img/capital-command-mini.png" alt="capital command image.">
       </div>
    </header>
 
@@ -62,13 +62,19 @@
          <!-- This contains the form transaction input values -->
          <section id="transaction-container">
             <form action="#" id="form">
-               <label for="description">Description</label>
-               <input type="text" name="description" id="description">
+               <fieldset>
+                  <legend>Add New Transaction</legend>
+                  <label for="description">Description</label>
+                  <input type="text" name="description" id="description">
 
-               <label for="amount">Amount</label>
-               <input type="number" name="amount" id="amount">
+                  <label for="amount">Amount</label>
+                  <p>Note: Enter ( - ) negative sign <strong>FIRST</strong> for your expenses</p>
+                  <input type="number" name="amount" id="amount">
 
-               <input type="submit" value="Submit" id="btn-add">
+                  <input type="submit" value="Submit" id="btn-add">
+                  <input type="reset" value="Reset" id="btn-reset">
+               </fieldset>
+               
             </form>
          </section>
 
