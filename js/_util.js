@@ -10,6 +10,9 @@ function handleTabClick(e) {
    });
 
    this.classList.add('current-tab');
+
+   const targetId = this.getAttribute('href');
+   document.querySelector(targetId)?.scrollIntoView({ behavior: 'smooth' });
 }
 
 navList.forEach(link => {
