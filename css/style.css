@@ -45,6 +45,7 @@ body img {
   display: flex;
   justify-content: space-around;
   background-color: #ccc;
+  flex-wrap: wrap;
   position: sticky;
   top: 0;
   left: 0;
@@ -244,6 +245,32 @@ body img {
 #dev {
   height: 90vh;
   background-color: #00446B;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+}
+#dev .right-content h2 {
+  font-size: 3rem;
+}
+#dev .right-content a {
+  color: #fff;
+  transition: 0.3s;
+}
+#dev .right-content a p {
+  font-size: 2rem;
+  padding: 20px;
+}
+#dev .right-content a:hover {
+  color: coral;
+}
+#dev .middle-content {
+  background-color: #fff;
+  width: 2px;
+  height: 60vh;
+}
+#dev .left-content footer p {
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

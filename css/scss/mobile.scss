@@ -1,0 +1,24 @@
+@media screen and (max-width: 425px) {
+   #main-nav {
+      flex-wrap: wrap;
+      
+      #nav-list {
+         display: none;
+      }
+   }
+
+   #hero {
+      #content-hero {
+         text-align: center;
+         h1 {
+            font-size: 4rem;
+         }
+         p {
+            font-size: 1.8rem;
+         }
+      }
+      #img-hero {
+         display: none;
+      }
+   }
+}

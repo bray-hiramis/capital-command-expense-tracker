@@ -1,0 +1,22 @@
+@media screen and (max-width: 425px) {
+  #main-nav {
+    flex-wrap: wrap;
+  }
+  #main-nav #nav-list {
+    display: none;
+  }
+  #hero #content-hero {
+    text-align: center;
+  }
+  #hero #content-hero h1 {
+    font-size: 4rem;
+  }
+  #hero #content-hero p {
+    font-size: 1.8rem;
+  }
+  #hero #img-hero {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=mobile.css.map */

@@ -302,4 +302,43 @@ body {
 #dev {
    height: 90vh;
    background-color: util.$accent-color;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   color: #fff;
+
+   .right-content {
+      h2 {
+         font-size: 3rem;
+      }
+      
+      a {
+         color: #fff;
+         transition: .3s;
+
+         p {
+            font-size: 2rem;
+            padding: 20px;
+         }
+
+         &:hover {
+            color: coral;
+         }
+      }
+   }
+
+   .middle-content {
+      background-color: #fff;
+      width: 2px;
+      height: 60vh;
+   }
+
+   .left-content {
+      footer {
+         p {
+            font-size: 2rem;
+         }
+      }
+   }
+
 }
