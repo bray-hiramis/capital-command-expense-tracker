@@ -5,16 +5,28 @@
   #main-nav #nav-list {
     display: none;
   }
-  #hero #content-hero {
-    text-align: center;
+  #hero {
+    display: none;
   }
-  #hero #content-hero h1 {
-    font-size: 4rem;
+  .container {
+    padding: 20px;
   }
-  #hero #content-hero p {
+  .container #main-container #balance-container h2 {
+    font-size: 2rem;
+  }
+  .container #main-container #balance-container #balance-total {
+    font-size: 2.5rem;
+  }
+  .container #main-container #income-expense-container h3 {
+    font-size: 2rem;
+  }
+  .container #main-container #income-expense-container p {
     font-size: 1.8rem;
   }
-  #hero #img-hero {
+  #about {
+    display: none;
+  }
+  #dev {
     display: none;
   }
 }

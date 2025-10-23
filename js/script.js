@@ -64,6 +64,14 @@ function addTransaction(e) {
 
 // This is the event listener inside the Form section in HTML
 form.addEventListener('submit', addTransaction);
+form.addEventListener('reset', function() {
+   transactions = [];
+   localStorage.clear();
+   moneyPlusDisplay.textContent = `PHP 0.00`;
+   moneyMinusDisplay.textContent = 'PHP 0.00';
+   balanceTotal.textContent = 'PHP 0.00';
+   historyList.innerHTML = '';
+})
 
 // ====================================================================
 

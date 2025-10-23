@@ -8,17 +8,38 @@
    }
 
    #hero {
-      #content-hero {
-         text-align: center;
-         h1 {
-            font-size: 4rem;
+      display: none;
+   }
+
+   .container {
+      padding: 20px;
+      #main-container {
+         #balance-container {
+            h2 {
+               font-size: 2rem;
+            }
+            #balance-total {
+               font-size: 2.5rem;
+            }
          }
-         p {
-            font-size: 1.8rem;
+
+         #income-expense-container {
+            h3 {
+               font-size: 2rem;
+            }
+            p {
+               font-size: 1.8rem;
+            }
          }
-      }
-      #img-hero {
-         display: none;
       }
    }
+
+   #about {
+      display: none;
+   }
+
+   #dev {
+      display: none;
+   }
 }
+
