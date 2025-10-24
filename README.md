@@ -15,5 +15,9 @@
 ---
 
 ### Demo (images):
-![Desktop View](img/Screenshot%20from%202025-10-20%2020-23-06.png)
-![Mobile View](img/capital-command-mini.png)
+
+#### Desktop View
+![Desktop View](img/desktop-view.png)
+
+#### Mobile View
+![Mobile View](img/mobile-view.png)
