@@ -14,10 +14,21 @@
 
 ---
 
-### Demo (images):
+### Demo (images)
 
 #### Desktop View
 ![Desktop View](img/desktop-view.png)
 
 #### Mobile View
 ![Mobile View](img/mobile-view.png)
+
+---
+
+## Getting Started
+
+1. Clone the repository
+**git clone https://github.com/bray-hiramis/capital-command-expense-tracker.git**
+2. Open the **index.html** file to a browser
+
+## Author
+![Bray Hiramis](github.com/bray-hiramis)
