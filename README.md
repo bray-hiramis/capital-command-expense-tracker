@@ -31,4 +31,4 @@
 2. Open the **index.html** file to a browser
 
 ## Author
-<b>Bray Hiramis</b> ![Bray Hiramis](github.com/bray-hiramis)
+<b>Bray Hiramis</b> - (![Bray Hiramis](github.com/bray-hiramis))
